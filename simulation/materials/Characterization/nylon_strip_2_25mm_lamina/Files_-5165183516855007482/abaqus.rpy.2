@@ -1,0 +1,26 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/Viewer Release 2019 replay file
+# Internal Version: 2018_09_24-14.41.51 157541
+# Run by david on Tue Feb 14 09:44:22 2023
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=100.44815826416, 
+    height=31.0)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from viewerModules import *
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+o2 = session.openOdb(name='job-strip-angle-0-35.odb')
+#* OdbError: 
+#* C:/Users/david/Documents/GitHub/R001-Textile-Metamaterials/materials/Characterization/nylon_strip_2_25mm_lamina/Files_-5165183516855007482/job-strip-angle-0-35.odb 
+#* is from a more recent release of Abaqus.
+#* 
+#*  The current Abaqus installation must be upgraded before this output 
+#* database can be opened.
